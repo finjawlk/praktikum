@@ -1,4 +1,4 @@
-<style>
+
     * {
         box-sizing: border-box;
     }
@@ -94,7 +94,6 @@
         margin: 0 -20px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row-reverse;
     }
     .col {
         width: 25%;
@@ -117,10 +116,15 @@
     @media (max-width: 580px) {
 
         .col {
-            width: 1000%;
+            width: 100%;
+        }
+        .container1 {
+            display: flex;
+        }
+        .button {
+            order: 2;
         }
     }
-    
     .boxshadowred:hover {
             box-shadow: 0 20px 30px rgb(217 24 24 / 31%);
         }
@@ -133,9 +137,9 @@
     .boxshadowlightpurple:hover {
         box-shadow: 0 20px 30px rgb(155 114 218 / 40%);
     }
-    a.nostyle {
+    .nostyle {
         text-decoration: none;
-        color: inherit;
+        color: inherit !important;
     }
     .button2 {
         font-size: 15pt;
@@ -144,7 +148,6 @@
         border-radius: 10px;
         padding: 15px;
         margin-top: 20px;
-        height: 42px;
         justify-content: center;
         border-style: solid
     }
@@ -160,9 +163,8 @@
         background-color: black;
         border-radius: 10px;
         padding: 15px;
-        margin-top: 20px;
-        margin-right: 20px;
-        height: 50px;
+        margin: 20px;
+        height: auto;
         justify-content: center;
         display: flex;
         align-items: center;
